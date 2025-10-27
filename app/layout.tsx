@@ -9,7 +9,7 @@ import { Suspense } from "react";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "thejourneyTours - Discover the Magic of Ghana",
+  title: "thejourneyTravelAndTours - Discover the Magic of Ghana",
   description:
     "Experience unforgettable Ghanaian communities with expert guides. Explore stunning destinations from Serengeti to Victoria Falls.",
   icons: {

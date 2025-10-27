@@ -88,7 +88,7 @@ export default function AboutPage() {
           className="relative z-10 container mx-auto px-4 text-center"
         >
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 text-balance">
-            About thejourneyTours
+            About The journey travel and tours
           </h1>
           <p className="text-lg text-white/90 max-w-2xl mx-auto text-pretty leading-relaxed">
             Pioneering sustainable tourism in Ghana since 2023
