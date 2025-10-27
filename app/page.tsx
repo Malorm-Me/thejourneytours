@@ -145,7 +145,7 @@ export default function HomePage() {
           icon: Globe,
         },
         {
-          value: "2K+",
+          value: "20+",
           label: "Happy Travelers",
           icon: Users,
         },
