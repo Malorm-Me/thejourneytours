@@ -30,7 +30,7 @@ export function Navbar() {
               className="rounded-lg object-cover"
             />
             <span className="text-foreground">
-              <span className="text-primary">thejourney</span>
+              <span className="text-primary">TheJourney</span>
               <span className="text-secondary">TravelAnd</span>
               <span className="text-accent">Tours</span>
             </span>
