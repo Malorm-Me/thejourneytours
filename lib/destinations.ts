@@ -23,7 +23,7 @@ export const destinations: Destination[] = [
       "Ghana's vibrant capital with rich history and coastal beauty",
     description:
       "Explore Ghana's bustling capital region, where modern city life meets historical significance. From the iconic Kwame Nkrumah Mausoleum to the pristine Labadi Beach, Greater Accra offers a perfect blend of culture, history, and relaxation. Discover colonial forts, vibrant markets, and the legacy of Pan-Africanism.",
-    image: "/accra-independence-square-and-skyline.jpeg",
+    image: "/acc2.jpg",
     gallery: ["/acc1.jpg", "/acc2.jpg", "/acc3.jpeg", "/acc4.jpg"],
     attractions: [
       "Kwame Nkrumah Mausoleum",
