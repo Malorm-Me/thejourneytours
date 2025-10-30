@@ -36,7 +36,7 @@ export default function HomePage() {
 
   // Auto-trigger promo popup after 2 seconds
   useEffect(() => {
-    const timer = setTimeout(() => setShowPromo(true), 2000);
+    const timer = setTimeout(() => setShowPromo(true), 5000);
     return () => clearTimeout(timer);
   }, []);
 
@@ -52,7 +52,8 @@ export default function HomePage() {
               December in Ghana
             </DialogTitle>
             <DialogDescription className="text-gray-600">
-              Join us for an unforgettable December heritage tours. Book now and enjoy exclusive offers!
+              Join us for an unforgettable December heritage tours. Book now and
+              enjoy exclusive offers!
             </DialogDescription>
           </DialogHeader>
           <div className="relative h-48 w-full rounded-xl overflow-hidden my-4">
@@ -68,9 +69,15 @@ export default function HomePage() {
               asChild
               className="bg-primary text-primary-foreground hover:bg-primary/90"
             >
-              <Link href="/december-package">View Package</Link>
+              <Link href="/december-package7">View 7 day Package</Link>
             </Button>
-           
+
+            <Button
+              asChild
+              className="bg-primary text-primary-foreground hover:bg-primary/90"
+            >
+              <Link href="/december-package">View 14 day Package</Link>
+            </Button>
           </div>
         </DialogContent>
       </Dialog>
@@ -101,9 +108,8 @@ export default function HomePage() {
             Discover the Magic of Ghana
           </h1>
           <p className="text-lg md:text-xl text-white/90 mb-8 max-w-2xl mx-auto text-pretty leading-relaxed">
-            Experience unforgettable , breathtaking landscapes, and
-            authentic cultural encounters across Ghana's most stunning
-            destinations
+            Experience unforgettable , breathtaking landscapes, and authentic
+            cultural encounters across Ghana's most stunning destinations
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
@@ -129,50 +135,51 @@ export default function HomePage() {
       </section>
 
       {/*stats Section*/}
-<motion.section
-  initial="hidden"
-  whileInView="visible"
-  viewport={{ once: true, margin: "-100px" }}
-  variants={staggerContainer}
-  className="py-16 bg-primary text-primary-foreground"
->
-  <div className="container mx-auto px-4">
-    <div className="flex flex-wrap justify-center items-center text-center gap-8 md:gap-16">
-      {[
-        {
-          value: "20+",
-          label: "Destinations Across Ghana",
-          icon: Globe,
-        },
-        {
-          value: "20+",
-          label: "Happy Travelers",
-          icon: Users,
-        },
-        {
-          value: "5+",
-          label: "Years of Experience",
-          icon: Award,
-        },
-      ].map((stat, i) => (
-        <motion.div
-          key={i}
-          variants={fadeInUp}
-          className="flex flex-col items-center flex-1 min-w-[120px] max-w-[180px]"
-        >
-          <div className="mb-3 flex items-center justify-center w-14 h-14 rounded-full bg-white/20">
-            <stat.icon className="w-7 h-7 text-white" />
+      <motion.section
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, margin: "-100px" }}
+        variants={staggerContainer}
+        className="py-16 bg-primary text-primary-foreground"
+      >
+        <div className="container mx-auto px-4">
+          <div className="flex flex-wrap justify-center items-center text-center gap-8 md:gap-16">
+            {[
+              {
+                value: "20+",
+                label: "Destinations Across Ghana",
+                icon: Globe,
+              },
+              {
+                value: "20+",
+                label: "Happy Travelers",
+                icon: Users,
+              },
+              {
+                value: "5+",
+                label: "Years of Experience",
+                icon: Award,
+              },
+            ].map((stat, i) => (
+              <motion.div
+                key={i}
+                variants={fadeInUp}
+                className="flex flex-col items-center flex-1 min-w-[120px] max-w-[180px]"
+              >
+                <div className="mb-3 flex items-center justify-center w-14 h-14 rounded-full bg-white/20">
+                  <stat.icon className="w-7 h-7 text-white" />
+                </div>
+                <div className="text-3xl sm:text-4xl font-extrabold">
+                  {stat.value}
+                </div>
+                <div className="text-primary-foreground/80 text-sm sm:text-base mt-1">
+                  {stat.label}
+                </div>
+              </motion.div>
+            ))}
           </div>
-          <div className="text-3xl sm:text-4xl font-extrabold">{stat.value}</div>
-          <div className="text-primary-foreground/80 text-sm sm:text-base mt-1">
-            {stat.label}
-          </div>
-        </motion.div>
-      ))}
-    </div>
-  </div>
-</motion.section>
-
+        </div>
+      </motion.section>
 
       {/* Featured Destinations */}
       <section className="py-20 bg-background">
@@ -190,7 +197,7 @@ export default function HomePage() {
             </h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto text-pretty leading-relaxed">
               Explore our handpicked selection of Ghana's most spectacular
-               destinations
+              destinations
             </p>
           </motion.div>
           <motion.div
@@ -232,20 +239,25 @@ export default function HomePage() {
                   </div>
                   <p className="text-muted-foreground text-sm leading-relaxed mb-4 line-clamp-2">
                     This December, experience Ghana’s heritage like never before
-                    a special package to explore the nation’s deep roots and
-                    timeless spirit
+                   a special package to explore the nation’s deep roots and
+                    timeless spirit.
                   </p>
-                  <div className="flex items-center gap-4 text-sm text-muted-foreground mb-4">
-                    <div className="flex items-center gap-1">
-                      <span className="font-semibold text-primary"></span>
-                    </div>
+
+                  <div className="flex flex-col space-y-2">
+                    <Button
+                      asChild
+                      className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
+                    >
+                      <Link href="/december-package7">7 Day Package</Link>
+                    </Button>
+
+                    <Button
+                      asChild
+                      className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
+                    >
+                      <Link href="/december-package">14 Day Package</Link>
+                    </Button>
                   </div>
-                  <Button
-                    asChild
-                    className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
-                  >
-                    <Link href="/december-package">Learn More</Link>
-                  </Button>
                 </CardContent>
               </Card>
             </motion.div>

@@ -29,7 +29,7 @@ export const destinations: Destination[] = [
       "Kwame Nkrumah Mausoleum",
       "Independence Square (Black Star Square)",
       "Labadi Beach",
-      "Osu Castle (Fort Christiansborg)",
+      "Osu Slave duneon (Fort Christiansborg)",
       "Jamestown Lighthouse",
       "Accra Arts Centre",
       "W.E.B. Du Bois Centre",
@@ -46,14 +46,15 @@ export const destinations: Destination[] = [
     name: "Central Region",
     country: "Ghana",
     region: "Central",
-    shortDescription: "Historic castles and pristine beaches along the coast",
+    shortDescription:
+      "Historic Slave duneons and pristine beaches along the coast",
     description:
-      "Journey through Ghana's Central Region, home to UNESCO World Heritage slave castles and the breathtaking Kakum National Park. Walk among the treetops on canopy walkways, explore centuries-old fortresses, and relax on beautiful coastal beaches. This region is essential for understanding Ghana's role in history.",
+      "Journey through Ghana's Central Region, home to UNESCO World Heritage slave Slave duneons and the breathtaking Kakum National Park. Walk among the treetops on canopy walkways, explore centuries-old fortresses, and relax on beautiful coastal beaches. This region is essential for understanding Ghana's role in history.",
     image: "/cape-coast-castle-overlooking-ocean.jpeg",
     gallery: ["/c1.jpg", "/c2.jpg", "/c3.jpg", "/c4.jpg"],
     attractions: [
-      "Cape Coast Castle",
-      "Elmina Castle",
+      "Cape Coast Slave duneon",
+      "Elmina Slave duneon",
       "Kakum National Park",
       "Hans Cottage Botel",
       "Assin Manso Slave River",
